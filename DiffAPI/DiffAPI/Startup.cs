@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using DiffAPI.Models;
 
 namespace DiffAPI
 {
@@ -25,6 +27,8 @@ namespace DiffAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<DiffContext>(opt =>
+                opt.UseInMemoryDatabase("DiffList"));
             services.AddControllers();
         }
 
