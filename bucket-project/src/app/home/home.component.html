@@ -1,0 +1,21 @@
+<div class="container-fluid">
+
+  <h1>Bucket List</h1>
+  <app-new-bucket *ngIf="isShowed"></app-new-bucket>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>All Buckets()</p>
+    </div>
+    <div class="col-sm-5">
+      <button class="btn btn-primary" (click)="createNewBucket()">Create New Bucket</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>Name</h4>
+    </div>
+    <div class="col-sm-5">
+      <h4>Location</h4>
+    </div>
+  </div>
+</div>

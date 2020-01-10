@@ -1,0 +1,4 @@
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+/* border of the input field turns red, if the input field is not valid*/

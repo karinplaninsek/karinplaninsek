@@ -1,0 +1,44 @@
+<div>
+  <p>Create New Bucket</p>
+  <form (ngSubmit)="createBucket(f)" #f="ngForm">
+    <div class="row">
+      <div class="col-sm-5 form-group">
+        <label for="name">Bucket Name</label>
+        <input
+          type="text"
+          id="name"
+          #name="ngModel"
+          name="name"
+          class="form-control"
+          ngModel
+          required>
+      </div>
+      <span class="help-block" *ngIf="!name.valid && name.touched">Please enter a name for the bucket</span>
+      <div class="col-sm-5 form-group">
+        <label for="location">Bucket Location</label>
+        <!--<input
+          type="text"
+          id="location"
+          class="form-control"
+          ngModel
+          required>-->
+          <div class="input-group">
+            <input type="text" id="location" class="form-control" ngModel required aria-label="Text input with dropdown button">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+        <button class="btn btn-success" type="submit" [disabled]="!f.valid">Create Bucket</button>
+
+    </div>
+  </form>
+</div>
