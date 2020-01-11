@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\bin\\Release",
+    "\\DiffAPI",
+    "\\DiffAPI\\Controllers",
+    "\\DiffAPI\\Models"
+  ],
+  "SelectedNode": "\\bin\\Release\\netcoreapp3.1",
+  "PreviewInSolutionExplorer": false
+}
