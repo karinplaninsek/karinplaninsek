@@ -7,20 +7,25 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { NewBucketComponent } from './new-bucket/new-bucket.component';
+import { BucketService } from './bucket.service';
+import { BucketComponent } from './bucket/bucket.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NewBucketComponent
+    NewBucketComponent,
+    BucketComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [BucketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
