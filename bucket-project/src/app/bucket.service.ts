@@ -8,8 +8,8 @@ export class BucketService {
   bucketsChanged = new Subject<Bucket[]>();
 
   private buckets: Bucket[] = [
-    new Bucket('BesStorage', 'Kranj'),
-    new Bucket('Pics', 'Ljubljana')
+    new Bucket('BesStorage', 'Kranj')
+    // new Bucket('Pics', 'Ljubljana')
   ];
 
   getBuckets() {

@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormControl, FormGroup, NgForm } from '@angular/forms';
+import { Bucket } from '../bucket.model';
+import { BucketService } from '../bucket.service';
 
 @Component({
   selector: 'app-new-bucket',
@@ -8,11 +10,21 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class NewBucketComponent implements OnInit {
 
-  constructor() { }
+  @Output() bucketAdded = new EventEmitter<Bucket>();
+
+  constructor(private bucketService: BucketService) { }
 
   ngOnInit() {
   }
 
-  createBucket() {}
+  createBucket(form: NgForm) {
+    const value = form.value;
+    const newBucket = new Bucket(value.name, value.location);
+
+    this.bucketAdded.emit(newBucket);
+    this.bucketService.createBucket(newBucket);
+
+    form.reset();
+  }
 
 }
