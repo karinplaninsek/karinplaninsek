@@ -10,11 +10,18 @@ import { HomeComponent } from '../home/home.component';
 export class BucketComponent implements OnInit {
 
   bucketDetails: any;
+  isShown: boolean;
 
   constructor(private newBucket: HomeComponent) { }
 
   ngOnInit() {
+    this.isShown = false;
+
     this.bucketDetails = this.newBucket.bucketName;
+  }
+
+  showDetails() {
+    this.isShown = !this.isShown;
   }
 
 }

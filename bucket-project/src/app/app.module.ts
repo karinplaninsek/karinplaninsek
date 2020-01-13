@@ -10,13 +10,17 @@ import { NewBucketComponent } from './new-bucket/new-bucket.component';
 import { BucketService } from './bucket.service';
 import { BucketComponent } from './bucket/bucket.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FilesComponent } from './bucket/files/files.component';
+import { DetailsComponent } from './bucket/details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NewBucketComponent,
-    BucketComponent
+    BucketComponent,
+    FilesComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
