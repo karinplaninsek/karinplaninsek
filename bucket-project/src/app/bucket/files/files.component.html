@@ -19,8 +19,9 @@
         <a
           class="list-group-item"
           id = "name"
-          style="cursor: pointer;">
-
+          style="cursor: pointer;"
+          *ngFor="let file of files; let i = index">
+          {{ file.fileName }}
         </a>
       </ul>
     </div>
@@ -29,9 +30,10 @@
       <ul class="list-group">
         <a
           class="list-group-item"
-          id = "name"
-          style="cursor: pointer;">
-
+          id = "modified"
+          style="cursor: pointer;"
+          *ngFor="let file of files; let i = index">
+          {{ file.lastModified }}
         </a>
       </ul>
     </div>
@@ -40,9 +42,10 @@
       <ul class="list-group">
         <a
           class="list-group-item"
-          id = "name"
-          style="cursor: pointer;">
-
+          id = "size"
+          style="cursor: pointer;"
+          *ngFor="let file of files; let i = index">
+          {{ file.size }}
         </a>
       </ul>
     </div>

@@ -12,6 +12,7 @@ import { BucketComponent } from './bucket/bucket.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FilesComponent } from './bucket/files/files.component';
 import { DetailsComponent } from './bucket/details/details.component';
+import { FileService } from './file.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { DetailsComponent } from './bucket/details/details.component';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [BucketService],
+  providers: [BucketService, FileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
