@@ -1,12 +1,12 @@
-import { File } from './bucket/file.model';
+import { Files } from './bucket/file.model';
 import { Subject } from 'rxjs';
 
 export class FileService {
 
-  filesChanged = new Subject<File[]>();
+  filesChanged = new Subject<Files[]>();
 
-  private files: File[] = [
-    new File('FileName01', '01.09.2019', 2)
+  private files: Files[] = [
+    new Files('FileName01', '01.09.2019', 2)
   ];
 
   getFile(index: number) {
@@ -17,12 +17,12 @@ export class FileService {
     return this.files.slice();
   }
 
-  createFile(file: File) {
+  createFile(file: Files) {
     this.files.push(file);
     this.filesChanged.next(this.files.slice());
   }
 
-  createFiles(files: File[]) {
+  createFiles(files: Files[]) {
     this.files.push(...files);
     this.filesChanged.next(this.files.slice());
   }

@@ -6,17 +6,17 @@
       <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
         <ul class="nav nav-tabs">
           <li class="nav-item" role="presentation">
-            <a class="nav-link" routerLinkActive="active">Files</a>
+            <a class="nav-link" [routerLink]="['/files']">Files</a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" href="#" (click)="showDetails()">Details</a>
+            <a class="nav-link" href="#" (click)="showDetails()" [routerLink]="['/bucket/details']">Details</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="row">
       <div>
-        <app-files></app-files>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>

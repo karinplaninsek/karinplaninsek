@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FilesComponent } from './bucket/files/files.component';
 import { DetailsComponent } from './bucket/details/details.component';
 import { FileService } from './file.service';
+import { ApiService } from './api.service';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import { FileService } from './file.service';
     NgbModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [BucketService, FileService],
+  providers: [BucketService, FileService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,3 @@
 export class Bucket {
-  constructor(public bucketName: string, public bucketLocation: string) {}
+  constructor(public id: string, public bucketName: string, public bucketLocation: string) {}
 }

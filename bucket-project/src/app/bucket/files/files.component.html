@@ -1,14 +1,24 @@
 <div>
+  <form>
   <div class="row">
     <br>
     <div class="col-sm-5">
       <p>All Files()</p>
     </div>
+
     <div class="col-sm-5">
-      <button class="btn btn-success">Upload object</button>
+      <!--<button class="btn btn-success">Upload object</button>-->
+      <label for="file">Upload object</label>
+      <input
+        type="file"
+        id="file"
+        placeholder="Upload Object"
+        type="submit"
+        class="btn btn-success"
+        (change)="fileUpload($event.target.files)">
     </div>
     <div class="col-sm-5">
-      <button class="btn btn-danger">Delete object</button>
+      <button class="btn btn-danger" (click)="getApiData()">Delete object</button>
     </div>
   </div>
   <br>
@@ -20,8 +30,8 @@
           class="list-group-item"
           id = "name"
           style="cursor: pointer;"
-          *ngFor="let file of files; let i = index">
-          {{ file.fileName }}
+          *ngFor="let file of fileToUpload; let i = index">
+          {{ file.name }}
         </a>
       </ul>
     </div>
@@ -50,4 +60,5 @@
       </ul>
     </div>
   </div>
+</form>
 </div>

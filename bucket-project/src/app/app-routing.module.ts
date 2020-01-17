@@ -7,7 +7,7 @@ import { FilesComponent } from './bucket/files/files.component';
 import { DetailsComponent } from './bucket/details/details.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  // { path: '', component: HomeComponent },
   { path: 'details', component: BucketComponent },
   { path: 'files', component: FilesComponent },
   { path: 'bucket/details', component: DetailsComponent }
