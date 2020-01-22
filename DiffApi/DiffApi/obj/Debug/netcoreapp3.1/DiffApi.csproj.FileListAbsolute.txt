@@ -128,6 +128,10 @@ C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\bin\Debug\netcoreap
 C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\bin\Debug\netcoreapp3.1\DiffApi.runtimeconfig.dev.json
 C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\bin\Debug\netcoreapp3.1\DiffApi.dll
 C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\bin\Debug\netcoreapp3.1\DiffApi.pdb
-C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\obj\Debug\netcoreapp3.1\DiffApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\obj\Debug\netcoreapp3.1\DiffApi.dll
 C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\obj\Debug\netcoreapp3.1\DiffApi.pdb
+C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\bin\Debug\netcoreapp3.1\xunit.assert.dll
+C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\bin\Debug\netcoreapp3.1\xunit.core.dll
+C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+C:\Users\Karin\Desktop\github\karinplaninsek\DiffAPI\DiffApi\obj\Debug\netcoreapp3.1\DiffApi.MvcApplicationPartsAssemblyInfo.cache
